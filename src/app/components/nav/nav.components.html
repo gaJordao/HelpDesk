@@ -1,0 +1,38 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <mat-nav-list class="nav-list">
+            <div class="image">
+                <img src="../../../assets/lobo.png" alt="Lobo">
+            </div>
+            <a mat-list-item routerLink="home">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a mat-list-item routerLink="tecnicos">
+                <i class="material-icons">account_circle</i>
+                Técnicos
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">person</i>
+                Clientes
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">code</i>
+                Github
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">logout</i>
+                Logout
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+        <app-header></app-header>
+      <button class="menu mat-elevation-v8" (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

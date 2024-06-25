@@ -1,0 +1,41 @@
+.container{
+    height: 100%;
+    background: linear-gradient(180deg, rgb(55, 8, 105) 0% 51%, rgba(52,25,101,1) 100%, rgba(79,23,110,1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: auto 1rem;
+    background-color: rgb(41, 41, 41);
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2.6vh;
+    font-weight: 500;
+    color: rgb(185, 185, 185);
+}
+
+img{
+    height: 15vh;
+    padding: 3rem 0;
+    width: 100%;
+    margin: auto;
+}
+
+button{
+    margin-top: 2rem;
+    font-size: 1.4vh;
+}
+
+.full-width{
+    width: 100%;
+}
